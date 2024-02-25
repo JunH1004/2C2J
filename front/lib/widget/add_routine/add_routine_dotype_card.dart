@@ -44,7 +44,7 @@ class _AddRoutineDoTypeCardState extends State<AddRoutineDoTypeCard> {
                         });
                       },
                       child:
-                      Text('😊 건강 루틴 만들기',style: doType=='do'? MyTextStyles.h3 : MyTextStyles.h3.copyWith(color: MyColors.light_grey,)))),
+                      Text('😊 건강 루틴 만들기',style: doType=='do'? MyTextStyles.h4 : MyTextStyles.h4.copyWith(color: MyColors.light_grey,)))),
                   Expanded(
                     child: TextButton(
                       onPressed: (){
@@ -53,7 +53,7 @@ class _AddRoutineDoTypeCardState extends State<AddRoutineDoTypeCard> {
                           widget.onChanged(doType);
                         });
                       },
-                      child: Text('😈 나쁜 습관 없애기',style: doType=='do'? MyTextStyles.h3.copyWith(color: MyColors.light_grey) : MyTextStyles.h3,))),
+                      child: Text('😈 나쁜 습관 없애기',style: doType=='do'? MyTextStyles.h4.copyWith(color: MyColors.light_grey) : MyTextStyles.h4,))),
                 ],
               ),
             ),
