@@ -63,6 +63,7 @@ class _RoutineDetailPageState extends State<RoutineDetailPage> {
                   ),
                   Text('시작일 2022/22/22', style: MyTextStyles.s1,),
                   TableCalendar(
+                    
                     headerStyle: HeaderStyle(
                       formatButtonVisible: false,
                       titleCentered: true
