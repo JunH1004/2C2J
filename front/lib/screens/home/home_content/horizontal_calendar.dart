@@ -11,6 +11,7 @@ class HorizontalWeekTodoBoard extends StatefulWidget {
 
 class _HorizontalWeekTodoBoardState extends State<HorizontalWeekTodoBoard> {
   DateTime _selectedDay = DateTime.now();
+  DateTime _focusedDay = DateTime.now();
   Map<DateTime, double> todoDoneRatio = {
     //그날 투두를 얼마나 잘 수행했는지 0 ~ 1 = 안함 ~ 다함
     DateTime.utc(2024, 2, 15): 1,
@@ -90,7 +91,7 @@ class _HorizontalWeekTodoBoardState extends State<HorizontalWeekTodoBoard> {
               return _buildCompletionMarker(completionRate,date);
             },
           ),
-          focusedDay: DateTime.now(), 
+          focusedDay: _selectedDay, 
           firstDay: DateTime.utc(2010, 10, 16),
           lastDay: DateTime.utc(2030, 3, 14),
           // 다른 달력 설정...

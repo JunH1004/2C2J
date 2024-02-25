@@ -3,7 +3,6 @@ import 'package:todotodo/my_style.dart';
 import 'package:todotodo/screens/home/home_content/brain_board.dart';
 import 'package:todotodo/screens/home/home_content/horizontal_calendar.dart';
 import 'package:todotodo/widget/sliver_padding_box.dart';
-import '../../widget/todolist_with_checkboxes.dart';
 
 class HomePage extends StatefulWidget {
   @override
